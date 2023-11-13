@@ -1,0 +1,235 @@
+@media screen {
+    @media (max-width: 767px) {
+        body {
+            background-color: #ff6600;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .login-details {
+            width: 75%;
+            height: 40vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 30px;
+            padding: 20px;
+        }
+        
+        .form {
+            margin-top: 5px;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .submit-button {
+            order: 2;
+            height: 40%;
+            width: 100%;
+            border: 0;
+            background-color: #ff6600;
+        }
+        
+        .code-field {
+            order: 1;
+            padding-left: 15px;
+            height: 50%;
+            width: 93.5%;
+            font-size: 50px;
+            margin-top: -5px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-width: 1px;
+        }
+        
+        .key-image {
+            height: 100%;
+        }
+        
+        .button {
+            background-color: #ff6600;
+            color: white;
+            transition: all;
+            transition-duration: 250ms;
+        }
+        
+        .button:hover {
+            background-color: #ff8d41;
+            cursor: pointer;
+        }
+        
+        .button:active {
+            background-color: #ffe6d5
+        }
+        
+        .troubles-button {
+            width: 100%;
+            height: 15%;
+            font-size: 10px;
+            background-color: #FF6600;
+            margin-top: 5px;
+            text-align: center;
+            color: white;
+            border: 0;
+        }
+        
+        .help-button {
+            width: 100%;
+            height: 15%;
+            font-size: 10px;
+            background-color: #FF6600;
+            margin-top: 5px;
+            text-align: center;
+            color: white;
+            border: 0;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        
+        .arrow-inside {
+            position: absolute;
+            width: 5%;
+            top: 85%;
+            left: 50%;
+            margin-bottom: 100vh;
+            transform: translate(-50%, 0);
+            transition: all;
+            transition-duration: 250ms;
+        }
+        
+        .arrow-inside:hover {
+            position: absolute;
+            width: 7%;
+            top: 84%;
+            left: 49%;
+            margin-bottom: 100vh;
+            transform: translate(-50%, 0);
+            cursor: pointer;
+        }
+
+        .arrow-outside {
+            display: none;
+        }
+    }
+    @media (min-width: 768px) {
+        body {
+            background-color: #ff6600;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .login-details {
+            width: 45%;
+            height: 25vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 30px;
+            padding: 20px;
+        }
+        
+        .form {
+            margin-top: 5px;
+            width: 100%;
+            height: 60%;
+            display: flex;
+        }
+        
+        .submit-button {
+            height: 100%;
+            aspect-ratio: 1 / 1;
+            border: 0;
+            background-color: #ff6600;
+            border-top-left-radius: 25px;
+        }
+        
+        .code-field {
+            padding-left: 15px;
+            height: 95%;
+            width: 100%;
+            border-top-right-radius: 25px;
+            font-size: 50px;
+            border-width: 1px;
+        }
+        
+        .key-image {
+            width: 100%;
+        }
+        
+        .button {
+            background-color: #ff6600;
+            color: white;
+            transition: all;
+            transition-duration: 250ms;
+        }
+        
+        .button:hover {
+            background-color: #ff8d41;
+            cursor: pointer;
+        }
+        
+        .button:active {
+            background-color: #ffe6d5
+        }
+        
+        .troubles-button {
+            width: 100%;
+            height: 15%;
+            font-size: 10px;
+            background-color: #FF6600;
+            margin-top: 5px;
+            text-align: center;
+            color: white;
+            border: 0;
+        }
+        
+        .help-button {
+            width: 100%;
+            height: 15%;
+            font-size: 10px;
+            background-color: #FF6600;
+            margin-top: 5px;
+            text-align: center;
+            color: white;
+            border: 0;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        
+        .arrow-outside {
+            position: absolute;
+            width: 5%;
+            top: 50%;
+            left: 15%;
+            margin-bottom: 100vh;
+            transform: translate(-50%, -50%);
+            transition: all;
+            transition-duration: 250ms;
+        }
+        
+        .arrow-outside:hover {
+            width: 7%;
+            top: 50%;
+            left: 13.5%;
+            margin-bottom: 100vh;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+
+        .arrow-inside {
+            display: none;
+        }
+    }
+}

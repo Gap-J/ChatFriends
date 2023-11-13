@@ -1,0 +1,22 @@
+{% extends "base-me.html" %}
+{% block title %} - Messages{% endblock %}
+{% block style %} 
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/messages.css') }}">
+{% block styles %}{% endblock %}
+{% endblock %}
+{% block area %}
+    <div class="contacts">
+            <h1 class="contacts-text">
+                Friends
+                <img src="{{ url_for('static', filename='assets/images/messages/Add.png') }}" alt="Add friend" class="add-friend" onclick="window.location.href = '/me/messages/add'">
+            </h1>
+        <div class="contacts-list">
+            {% for i in range(0, friends_list_length) %}
+                <button class="contact" onclick="window.location.href = '/me/messages/friend/{{ friends_names[i] }}'"> {{ friends_names[i] }} </button>
+            {% endfor %}        
+        </div>
+    </div>
+    <div class="messages">
+        {% block messages %}{% endblock %}
+    </div>
+{% endblock %}

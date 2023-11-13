@@ -1,0 +1,12 @@
+{% extends "messages.html" %}
+{% block messages %}
+    <div class="form-area">
+        <h1 class="friend-request-text">Add a new friend</h1>
+        <form action='/me/messages/' method="POST" class="add-friend-form">
+            <input type="text" name="friend-name" id="friend-name-field" class="friend-name-field", placeholder="Enter friend's name">
+            <button type="submit" class="friend-name-submit">
+                <img src="{{ url_for('static', filename='assets/images/messages/Send.png') }}" alt="Send Request" class="friend-name-submit-image">
+            </button>
+        </form>
+    </div>
+{% endblock %}

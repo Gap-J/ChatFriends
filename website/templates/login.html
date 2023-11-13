@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %} - Login{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="circle5"></div>
+    <div class="login">
+        <img src="{{ url_for('static', filename='assets/images/logo/Logo.png')}}" alt="ChatFriends" class="logo">
+        <div class="line"></div>
+        <div class="login-details">
+            <h1 class="login-text">Login</h1>
+            <form action="#" method="POST" class="form">
+                <input type="text" class="username-field field" placeholder="Enter account username" name="username" id="username">
+                <input type="password" class="password-field field" placeholder="Enter account password" name="password" id="password">
+                <label for="remember" class="remember-label">Remember me: </label>
+                <input type="checkbox" name="remember" id="remember" value="remember" class="remember-checkbox">
+                <button type="submit", class="submit-button login-button">Login</button>
+            </form>
+            <button type="button", class="troubles-button login-button">Having trouble logging in?</button>
+            <button type="button", class="create-button login-button" onclick="window.location.href = '/signup'">Create a new account</button>
+            <a href="/login/quick"><img src="{{ url_for('static', filename='assets/images/login/Arrow-Right-Coloured.png') }}" alt="Quick-Login" class="arrow-inside"></a>
+        </div>
+        <a href="/login/quick"><img src="{{ url_for('static', filename='assets/images/login/Arrow-Right.png') }}" alt="Quick-Login" class="arrow-outside"></a>
+    </div>
+</div>
+{% endblock %}

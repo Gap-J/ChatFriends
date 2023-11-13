@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %} - Quick-Login{% endblock %}
+{% block head %} 
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/quick-login.css') }}"> 
+{% endblock %}
+{% block content %}
+<div class="container">
+    <a href="/login"><img src="{{ url_for('static', filename='assets/images/login/Arrow-Left.png') }}" alt="Login" class="arrow-outside"></a>
+    <div class="login-details">
+        <form action="#" method="post" class="form">
+            <button type="submit" class="submit-button button">
+                <img src="{{ url_for('static', filename='assets/images/login/Key.png') }}" alt="Confirm" class="key-image">
+            </button>
+            <input type="password" name="Code" id="Code" class="code-field" placeholder="Enter Quick-Login code">
+        </form>
+        <button type="button" class="troubles-button button">Having trouble logging in?</button>
+        <button type="button" class="help-button button">What's a Quick-Login code?</button>
+        <a href="/login"><img src="{{ url_for('static', filename='assets/images/login/Arrow-Left-Coloured.png') }}" alt="Login" class="arrow-inside"></a>
+    </div>
+</div>
+{% endblock %}

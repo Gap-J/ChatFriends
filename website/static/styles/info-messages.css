@@ -1,0 +1,214 @@
+@media screen {
+    @media (min-width: 1024px) {
+        .area {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(16, 16, 16);
+            box-sizing: border-box;
+            padding: 100px;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        
+        h1 {
+            font-family: Titan One, 'Courier New', Courier, monospace;
+            color: #ff6600;
+            font-size: 50px;
+        }
+        
+        .box {
+            width: 100%;
+            aspect-ratio: 5 / 2;
+            background-color: rgb(24, 24, 24);
+            border: #ff6600 5px solid;
+            border-radius: 30px;
+            overflow-y: auto;
+        }
+        
+        .request {
+            width: 100%;
+            height: 70px;
+            display: flex; 
+            border: #ff6600 1px solid;
+            border-left: none;
+            border-right: none;
+            box-sizing: border-box;
+        }
+        
+        .request-name {
+            width: 100%;
+            height: 100%;
+            font-size: 50px;
+            text-indent: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            background-color: rgb(24, 24, 24);
+            border: 0;
+            text-align: left;
+        }
+        
+        .request-name:hover {
+            cursor: pointer;
+        }
+        
+        .request-deny {
+            background-color: #ff6600;
+            height: 100%;
+            aspect-ratio: 1 / 1;
+            color: white;
+            font-size: 3.5em;
+            text-align: center;
+            user-select: none;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: all 250ms;
+            border: 0;
+        }
+        
+        .request-deny:hover {
+            background-color: rgb(255, 60, 60);
+            cursor: pointer;
+        }
+    }
+    @media (max-width: 1023px) and (min-width: 767px) {
+        .area {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(16, 16, 16);
+            box-sizing: border-box;
+            padding: 100px;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        
+        h1 {
+            font-family: Titan One, 'Courier New', Courier, monospace;
+            color: #ff6600;
+            font-size: 50px;
+            text-align: center;
+        }
+        
+        .box {
+            width: 100%;
+            aspect-ratio: 5 / 2;
+            background-color: rgb(24, 24, 24);
+            border: #ff6600 5px solid;
+            border-radius: 30px;
+            overflow-y: auto;
+        }
+        
+        .request {
+            width: 100%;
+            height: 70px;
+            display: flex; 
+            border: #ff6600 1px solid;
+            border-left: none;
+            border-right: none;
+            box-sizing: border-box;
+        }
+        
+        .request-name {
+            width: 100%;
+            height: 100%;
+            font-size: 50px;
+            text-indent: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            background-color: rgb(24, 24, 24);
+            border: 0;
+            text-align: left;
+        }
+        
+        .request-name:hover {
+            cursor: pointer;
+        }
+        
+        .request-deny {
+            background-color: #ff6600;
+            height: 100%;
+            aspect-ratio: 1 / 1;
+            color: white;
+            font-size: 3.5em;
+            text-align: center;
+            user-select: none;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: all 250ms;
+            border: 0;
+        }
+        
+        .request-deny:hover {
+            background-color: rgb(255, 60, 60);
+            cursor: pointer;
+        }
+    }
+    @media (max-width: 767px) {
+        .area {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(16, 16, 16);
+            box-sizing: border-box;
+            padding: 100px;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        
+        h1 {
+            font-family: Titan One, 'Courier New', Courier, monospace;
+            color: #ff6600;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .box {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background-color: rgb(24, 24, 24);
+            border: #ff6600 5px solid;
+            border-radius: 30px;
+            overflow-y: auto;
+        }
+        
+        .request {
+            width: 100%;
+            height: 70px;
+            display: flex; 
+            border: #ff6600 1px solid;
+            border-left: none;
+            border-right: none;
+            box-sizing: border-box;
+        }
+        
+        .request-name {
+            width: 100%;
+            height: 100%;
+            font-size: 50px;
+            text-indent: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            background-color: rgb(24, 24, 24);
+            border: 0;
+            text-align: left;
+        }
+        
+        .request-name:hover {
+            cursor: pointer;
+        }
+        
+        .request-deny {
+            background-color: #ff6600;
+            height: 100%;
+            aspect-ratio: 1 / 1;
+            color: white;
+            font-size: 3.5em;
+            text-align: center;
+            user-select: none;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: all 250ms;
+            border: 0;
+        }
+        
+        .request-deny:hover {
+            background-color: rgb(255, 60, 60);
+            cursor: pointer;
+        }
+    }
+}

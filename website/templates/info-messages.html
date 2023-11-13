@@ -1,0 +1,16 @@
+{% extends "base-me.html" %}
+{% block title %} - Info{% endblock %}
+{% block style %}<link rel="stylesheet" href="{{ url_for('static', filename='styles/info-messages.css') }}">{% endblock %}
+{% block area %}
+<div class="area">
+    <h1>Friend Requests</h1>
+    <div class="box">
+        {% for i in range(0, requests_list_length) %}
+        <div class="request">
+            <button class="request-name" onclick="window.location.href = '/me/friends/add/accept/?value={{ requests[i] }}'"><b>{{ requests[i] }}</b></button>
+            <button class="request-deny request-button">-</button>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}

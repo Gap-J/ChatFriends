@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.full-alert {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+}
+
+.close-alert {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    font-size: 40px;
+    border: 1px;
+    border-top: solid;
+    border-color: #ff6600;
+    background: white;
+    color: #ff6600;
+    transition: all;
+    transition-duration: 100ms;
+}
+
+.close-alert:hover {
+    border-top: none;
+    border-color: white;
+    background-color: #ff6600;
+    color: white;
+    border-bottom: solid;
+    cursor: pointer;
+}
+
+.alert {
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    font-family: Titan One, 'Courier New', Courier, monospace;
+    text-align: center;
+    border-bottom: solid;
+    border-width: 2px;
+}
+
+.alert-error {
+    background-color: pink;
+    color: palevioletred;
+}
+
+.alert-success {
+    background-color: greenyellow;
+    color: green;
+}

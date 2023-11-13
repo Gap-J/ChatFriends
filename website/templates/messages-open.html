@@ -1,0 +1,29 @@
+{% extends "messages.html" %}
+{% block styles %} <link rel="stylesheet" href="{{ url_for('static', filename='styles/messages-open.css') }}"> {% endblock %}
+{% block messages %}
+    <h1 class="message-text">{{ friend }}</h1>
+    <div class="messages-box">
+        {% for i in range(0, messages_list_length) %}
+            {% if messages[i][1] == id %}
+                <div class="message message-you">
+                    <div class="message-label message-label-you"><b>YOU - {{ messages[i][3] }}</b></div>
+                    <div class="message-content">{{ messages[i][2] }}</div>
+                </div>
+            {% else %}
+            <div class="message message-other">
+                <div class="message-label message-label-other"><b>{{ friend }} - {{ messages[i][3] }}</b></div>
+                <div class="message-content">{{ messages[i][2] }}</div>
+            </div>
+            {% endif %}
+        {% endfor %}
+        <form action="" method="POST" class="message-bar">
+            <input type="text" name="message" id="message" class="message-field">
+        </form>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var messagesBox = document.querySelector(".messages-box");
+            messagesBox.scrollTop = messagesBox.scrollHeight;
+        });
+    </script>
+{% endblock %}

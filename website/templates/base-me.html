@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block head %} 
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/base-me.css') }}">
+    {% block style %}{% endblock %}
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="navbar">
+        <div class="navbar-button" onclick="window.location.href = '/me/messages'">
+            <img src="{{ url_for('static', filename='assets/images/navbar/Chat.png') }}" alt="Info" class="navbar-button-image">
+        </div>
+        <div class="navbar-gap"></div>
+        <div class="navbar-button" onclick="window.location.href = '/me/info/messages'">
+            <img src="{{ url_for('static', filename='assets/images/navbar/Info.png') }}" alt="Info" class="navbar-button-image">
+        </div>
+        <div class="navbar-button" onclick="window.location.href = '/me/account/logout'">
+            <img src="{{ url_for('static', filename='assets/images/navbar/Log-Out.png') }}" alt="Info" class="navbar-button-image">
+        </div>
+    </div>
+    {% block area %}{% endblock %}
+</div>
+{% endblock %}
